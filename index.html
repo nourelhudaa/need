@@ -3,6 +3,8 @@
     <head>
         <title>Diary</title>
         <link rel="icon" type="image" href="logoff.png" />
+        <link rel="style" type="style" href="stylesh.css" />
+        <link rel="style" type="style" href="bootstrap.min.css" />
 </head>
 <body>
         <style>
@@ -12,13 +14,15 @@
                  
                 </style>
      <p><img src="logoff.png" width=200 height=150></p>
-    <hr>
-    <input type="button" id="cnx" value="Sign In"  >
-    <br>
-    <button id="inscri">Sign up </button>
+     <form>
+        <input type="button" id="cnx" value="Sign In" onClick="parent.location='signin.html'"></button>
+     <br> 
+         <input type="button" id="inscri" value="Sign up" onClick="parent.location='signup.html'"></button>
+
+    </form>
     <h1>Use this as your own personal space </h1>
     <h1>Create your own world</h1>
     <h1>Be as free as this website is</h1>
-
+<script src="java.js"></script>
 </body>
 </html>

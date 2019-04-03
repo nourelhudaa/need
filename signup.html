@@ -3,6 +3,8 @@
     <head>
         <title>Sign up</title>
         <link rel="icon" type="image" href="logoff.png" />
+        <link rel="style" type="style" href="stylesh.css" />
+        <link rel="style" type="style" href="bootstrap.min.css" />
     </head>
     <body>
         <style>
@@ -13,28 +15,29 @@
         </style>
         <p><img src="logoff.png" width=200 height=150></p>
         <hr>
-        <b>
-        <input type="button" id="home" value="Home"  >
+        <b> <form  >
+        <input type="button" id="home" value="Home" onClick="parent.location='index.html'"  > </form>
         <br>
-        <input type="button" id="cnx" value="Sign In"  >
+        <form  >
+        <input type="button" id="cnx" value="Sign In" onClick="parent.location='signin.html'" > </form>
         <br>
         <center>
-        <p>Nom :</p> <input type="text area" placeholder="Saisir votre nom" >
+        <p>Last name :</p> <input type="text area" id="write" placeholder="Last name" >
         <br>
-        <p>Prenom :</p> <input type="text area" placeholder="Saisir votre prenom" >
+        <p>First namee :</p> <input type="text area" id="write" placeholder="First Name" >
         <br>
-        <p>Num de Telephone :</p> <input type="text area" placeholder="Saisir votre num" >
+        <p>Phone number:</p> <input type="text area" id="write" placeholder="type your number" >
         <br>
         <p>Gender : </p> <input type="radio" name ="gender" value="female">Female
          <input type="radio" name ="gender" value="Male">Male
          <br>
-          <p>e-mail :</p> <input type="text area" placeholder="Saisir votre mail" >
+          <p>e-mail :</p> <input type="text area" id="write" placeholder="type your e-mail " >
          <br>
-         <p>Bithday:</p> <input type="date" placeholder="Saisir votre date de naissance" >
+         <p>Bithday:</p> <input type="date" placeholder="Your Birthday" >
          <br>
-         <p>Nationalité :</p>
+         <p>Nationality :</p>
          <select >
-            <option value="Nationalité" selected disabled> Nationalité</option>
+            <option value="Nationalité" selected disabled> Nationality/option>
             <option value="Middle East" > Middle East</option>
             <option value="Africa"> Africa</option>
             <option value="USA" > USA</option>
@@ -48,12 +51,16 @@
         <input type="checkbox" value="net">The net<br>
         <input type="checkbox" value="dancing">Dancing<br>
         <input type="checkbox" value="Travel">travelling<br>
-        <p>Mot de passe :</p> <input type="password" placeholder="Saisir votre mot de passe" >
+        <p>password:</p> <input type="password" placeholder="Type your password" >
         <br>
-        <p> Confirmer votre mot de passe :</p> <input type="password" placeholder="Confirmer votre mot de passe" >
+        <p> Confirm your password :</p> <input type="password" placeholder="Confirm your password" >
         <br>
-        <input type="submit" value="Submit" > 
-        <input type="reset"  value="Reset"> 
+        <form >
+        <input type="submit" value="Submit" onclick="submit()"> 
+</form> <br>
+<form >
+        <input type="reset"  value="Reset" onClick="parent.location='signup.html'"> 
+        </form>
 
     </center>
     </body>

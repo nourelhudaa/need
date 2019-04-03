@@ -3,6 +3,8 @@
     <head>
         <title>Home</title>
         <link rel="icon" type="image" href="logoff.png" />
+        <link rel="style" type="style" href="stylesh.css" />
+        <link rel="style" type="style" href="bootstrap.min.css" />
     </head>
     <body>
         <style>
@@ -14,16 +16,26 @@
         <p><img src="logoff.png" width=200 height=150></p>
         <hr>
         <b>
-         <input type="button" id="home" value="Home"  >
+                <form>
+         <input type="button" id="Home" value="Home" onClick="parent.location='home.html'"  >
+        </form>
          <br>
-         <input type="button" id="profile" value="Profile"  >
-         <br>
-         <input type="button" id="out" value="Log Out"  >
-         <br>
+         <form>
+         <input type="button" id="profile" value="Profile" onClick="parent.location='profile.html'">
+         </form>
+         <br> <form>
+         <input type="button" id="out" value="Log Out" onClick="parent.location='index.html'" >
+         <br> </form>
          <center>
              <p>Saisir la tache a ajouter :</p> <br>
-             <input type="text" placeholder="Saisir"><br>
-             <input type="submit" value="Submit" > 
-             <input type="reset"  value="Reset"> 
+             <input type="text" placeholder="Type"><br>
+             <input type="submit" value="Submit" onclick="submit()" > 
+             <form >
+             <input type="reset"  value="Reset" onClick="parent.location='ajout.html'"> 
+             </form>
          </center>
+         </b>
+         </body>
+         </html>
+         
          

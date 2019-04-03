@@ -3,6 +3,8 @@
     <head>
         <title>Sign In</title>
         <link rel="icon" type="image" href="logoff.png" />
+        <link rel="style" type="style" href="stylesh.css" />
+        <link rel="style" type="style" href="bootstrap.min.css" />
     </head>
     <body>
         <style>
@@ -14,15 +16,21 @@
         <p><img src="logoff.png" width=200 height=150></p>
         <hr>
         <b>
-         <input type="button" id="home" value="Home"  >
-         <br>
-         <input type="button" id="inscri" value="Sign Up"  >
-         <br>
+         <form >
+         <input type="button" id="home" value="Home" onClick="parent.location='index.html'">
+         <br></form>
+         <form >
+         <input type="button" id="inscri" value="Sign Up" onClick="parent.location='signup.html'">
+         </form><br>
          <center>
-        <p>Saisir votre Adresse:</p><input type="text" placeholder="Saisir votre mail"> <br>
-        <p>Saisir votre password:</p><input type="password" placeholder="Saisir votre password"><br>
-        <input type="submit" value="Connexion">
-        <input type="reset"  value="Reset">
+        <p>Saisir votre Adresse:</p><input type="text" id="write" placeholder="Type your e-mail"> <br>
+        <p>Saisir votre password:</p><input type="password" id="write" placeholder="password"><br>
+        <form action="/home.html">
+        <input type="submit" value="Log in">
+        </form>
+        <form >
+        <input type="reset"  value="Reset" onClick="parent.location='signin.html'">
+        </form>
         </center>
         </body>
         </html>
